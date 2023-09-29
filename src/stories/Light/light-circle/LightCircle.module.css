@@ -1,0 +1,20 @@
+.circle {
+    border-radius: 50%;
+    border-radius: 50%;
+    min-width: var(--traffic-min-width);
+    min-height: var(--traffic-min-width);
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.red-color {
+    background: var(--red);
+}
+
+.orange-color {
+    background: var(--orange);
+}
+
+.green-color {
+    background: var(--green);
+}

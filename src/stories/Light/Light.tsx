@@ -1,12 +1,13 @@
 import React from 'react'
-import '@src/stories/Light/Light.css'
+import styles from '@src/stories/Light/Light.module.css'
+import LightCircle from '@src/stories/Light/light-circle/LightCircle.tsx'
 
 const Light = () => {
   return (
-    <section className='traffic-wrapper center'>
-      <figure className='circle red-color'></figure>
-      <figure className='circle orange-color'></figure>
-      <figure className='circle green-color'></figure>
+    <section className={[styles['traffic-wrapper'], 'center' ].join(' ') }>
+      <LightCircle color='red'></LightCircle>
+      <LightCircle color='orange'></LightCircle>
+      <LightCircle color='green'></LightCircle>
     </section>
   )
 }

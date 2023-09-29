@@ -1,0 +1,16 @@
+.traffic-wrapper {
+  border: 0.5em solid black;
+  border-radius: 3em;
+  width: fit-content;
+}
+
+@media only screen and (--mobile) {
+  /* Note that varibales declared in root should be updated in root */
+  :root {
+    --traffic-min-width: 1em;
+  }
+
+  .traffic-wrapper {
+    border: 0.25em solid black;
+  }
+}
