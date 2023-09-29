@@ -4,6 +4,25 @@
   width: fit-content;
 }
 
+.shine {
+  /* Set a base box-shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0);
+
+  /* Define the animation */
+  animation: glow 1s infinite alternate;
+}
+
+/* Keyframes for the glow animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0);
+  }
+
+  to {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+  }
+}
+
 @media only screen and (--mobile) {
   /* Note that varibales declared in root should be updated in root */
   :root {
