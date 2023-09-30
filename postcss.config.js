@@ -2,7 +2,7 @@ import cssnano from 'cssnano'
 import postcssPresetEnv from 'postcss-preset-env'
 import postcssCustomMedia from 'postcss-custom-media';
 import postcssGlobalData from '@csstools/postcss-global-data';
-
+import autoprefixer from 'autoprefixer'
 
 export default {
     plugins: [
@@ -16,5 +16,6 @@ export default {
             ]
         }),
         postcssCustomMedia(),
+        autoprefixer()
     ]
 }
